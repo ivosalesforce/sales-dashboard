@@ -1,11 +1,21 @@
-// Global Variables
 $primary-font: "Roboto", sans-serif;
 $background-color: #f5f5f5;
 $text-color: #333;
 $link-color: #3f51b5;
 $link-hover-color: #303f9f;
 
-// Apply a global font and reset some defaults
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: $primary-font;
@@ -14,7 +24,6 @@ body {
   line-height: 1.6;
 }
 
-// Global link styles
 a {
   color: $link-color;
   text-decoration: none;
@@ -25,7 +34,6 @@ a {
   }
 }
 
-// Headings for consistency
 h1,
 h2,
 h3,
@@ -38,12 +46,10 @@ h6 {
   color: $text-color;
 }
 
-// Default spacing for paragraphs
 p {
   margin: 0 0 1rem 0;
 }
 
-// Utility classes for layout
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -57,7 +63,6 @@ p {
   text-align: center;
 }
 
-// Button consistency
 button {
   font-family: $primary-font;
   border: none;
@@ -70,3 +75,11 @@ button {
     cursor: not-allowed;
   }
 }
+
+main {
+  flex: 1;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 1.2rem;
+}
+ 

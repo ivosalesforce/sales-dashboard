@@ -11,7 +11,7 @@ export class LoginGuard implements CanActivate {
     const token = localStorage.getItem('salesforce_token');
 
     if (token) {
-      this.router.navigate(['/']);
+      this.router.navigate(['/dashboard']);
       return false;
     }
 

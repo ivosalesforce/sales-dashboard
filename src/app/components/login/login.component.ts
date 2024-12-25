@@ -15,13 +15,13 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   async onLogin() {
     try {
       const tokenData = await this.authService.login(this.username, this.password);
       console.log('Authentication successful', tokenData);
-      window.location.href = '/';
+      this.router.navigate(['/dashboard']);
     } catch (error) {
       alert('Login failed. Please check your credentials.');
     }

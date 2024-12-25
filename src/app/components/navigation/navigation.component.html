@@ -1,0 +1,10 @@
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+        <li><a routerLink="/opportunities" routerLinkActive="active">Opportunities</a></li>
+        <li><a routerLink="/sales-pipeline" routerLinkActive="active">Sales Pipeline</a></li>
+        <li><a routerLink="/lead-tracker" routerLinkActive="active">Lead Tracker</a></li>
+        <li><a routerLink="/export-data" routerLinkActive="active">Export Data</a></li>
+        <li><a class="logout-button" (click)="authService.logout()">Logout</a></li>
+    </ul>
+</nav>
