@@ -1,0 +1,8 @@
+{
+    "/services": {
+        "target": "https://ivotrifonov3-dev-ed.develop.my.salesforce.com",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}
